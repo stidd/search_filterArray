@@ -1,0 +1,16 @@
+body {
+  font-family: sans-serif;
+}
+
+#userInput {
+  width: 50%;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
