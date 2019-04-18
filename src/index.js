@@ -7,9 +7,7 @@ document.getElementById("app").innerHTML = `
       <input id="search" placeholder="search here" />
     </div>
 
-    <div>
-      <ol id="result">
-      </ol>
+    <div id="result">
     </div>
 `;
 
@@ -217,6 +215,7 @@ const animals = [
   "Tarsier",
   "Termite",
   "Tiger",
+  "Three Eyed Raven",
   "Toad",
   "Trout",
   "Turkey",
@@ -258,5 +257,5 @@ function filterAnimals(searchValue) {
   }
   searchValue === ""
     ? (result.innerHTML = "")
-    : (result.innerHTML = filteredArr.join(" "));
+    : (result.innerHTML = `<ol>${filteredArr.join(" ")}</ol>`);
 }
